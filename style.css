@@ -1,0 +1,106 @@
+body{
+  background-color: aqua;
+  background-image: linear-gradient(aqua, rgb(65, 128, 255));
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  height: 700px;
+}
+
+input{
+  border-radius: 20px;
+  border-width:0cm;
+  width: 250px;
+  padding: 10px;
+  height: 25px;
+}
+
+.input-div{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.search-icon{
+  margin-top: 5px;
+  background-color: white;
+  border-radius: 20px;
+  margin-left: 20px;
+  padding: 10px;
+  width: 20px;
+  
+}
+
+.sun{
+  width: 120px;
+  margin-left: 50px;
+
+}
+
+.middle-div{
+  display: inline;
+  margin-top: 40px;
+}
+
+.middle-flex{
+  display: flex;
+  justify-content: center;
+}
+
+.temp{
+  font-size: 80px;
+  margin-top: 40px;
+  margin-left: 50px;
+  width: 175px;
+}
+
+.city{
+  font-size: 40px;
+  margin-left: 50px;
+
+}
+
+.humidity-icon{
+  width: 40px;
+}
+
+.buttom-div{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;  
+}
+
+.humid-div{
+  display: flex;
+
+
+}
+
+.humid-text{
+  margin-top: 10px;
+  margin-left: 3px;
+}
+
+.wind-icon{
+  width: 35px;
+  margin-right: -20px;
+}
+
+.wind-div{
+  display: flex;
+}
+
+.wind-text{
+  margin-top: 13px;
+  margin-left: 30px;
+
+}
+
+.serch-button{
+  background-color: transparent;
+  border: none;
+}
+
+
