@@ -103,4 +103,30 @@ input{
   border: none;
 }
 
+@media (max-width: 500px) {
+  body {
+    height: 100vh;
+  }
 
+  input {
+    width: 80%;
+  }
+
+  .temp {
+    font-size: 60px;
+  }
+
+  .city {
+    font-size: 30px;
+  }
+
+  .buttom-div {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .humidity-icon, .wind-icon {
+    width: 30px;
+  }
+}
