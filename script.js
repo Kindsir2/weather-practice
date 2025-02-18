@@ -8,15 +8,10 @@ async function checkWeather(city) {
    const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
    let data = await response.json();
 
-   console.log(data);
-   
-
    document.querySelector(".city").innerHTML= data.name;
    document.querySelector(".temp").innerHTML= Math.round(data.main.temp)  + "°c";
    document.querySelector(".humid-text").innerHTML= data.main.humidity+ "% Humidity";
    document.querySelector(".wind-text").innerHTML= data.wind.speed + " km/h Windspeed";
-
-
 
    if (data.sys.sunrise == 'Clouds') {
     weathericon.src = "images/cloudy.png"
