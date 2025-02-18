@@ -1,132 +1,103 @@
-body{
-  background-color: aqua;
-  background-image: linear-gradient(aqua, rgb(65, 128, 255));
+body {
+  background: linear-gradient(to bottom, #87CEFA, #4682B4);
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-div {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 50px;
+  padding: 5px 10px;
+  width: 320px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search {
+  border: none;
+  outline: none;
+  padding: 12px;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 50px;
+  color: #333;
+}
+
+.serch-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.search-icon {
+  width: 28px;
+  height: 28px;
+}
+
+
+.middle-div {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sun {
+  width: 100px;
+}
+
+.temp {
+  font-size: 60px;
   font-weight: bold;
-  height: 700px;
 }
 
-input{
-  border-radius: 20px;
-  border-width:0cm;
-  width: 250px;
-  padding: 10px;
-  height: 25px;
+.city {
+  font-size: 30px;
 }
 
-.input-div{
-  margin-top: 30px;
+.buttom-div {
   display: flex;
   justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
 }
 
-
-.search-icon{
-  margin-top: 5px;
-  background-color: white;
-  border-radius: 20px;
-  margin-left: 20px;
-  padding: 10px;
-  width: 20px;
-  
-}
-
-.sun{
-  width: 120px;
-  margin-left: 50px;
-
-}
-
-.middle-div{
-  display: inline;
-  margin-top: 40px;
-}
-
-.middle-flex{
+.humid-div, .wind-div {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: 10px;
 }
 
-.temp{
-  font-size: 80px;
-  margin-top: 40px;
-  margin-left: 50px;
-  width: 175px;
-}
-
-.city{
-  font-size: 40px;
-  margin-left: 50px;
-
-}
-
-.humidity-icon{
+.humidity-icon, .wind-icon {
   width: 40px;
 }
 
-.buttom-div{
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
-  gap: 100px;  
-}
-
-.humid-div{
-  display: flex;
-
-
-}
-
-.humid-text{
-  margin-top: 10px;
-  margin-left: 3px;
-}
-
-.wind-icon{
-  width: 35px;
-  margin-right: -20px;
-}
-
-.wind-div{
-  display: flex;
-}
-
-.wind-text{
-  margin-top: 13px;
-  margin-left: 30px;
-
-}
-
-.serch-button{
-  background-color: transparent;
-  border: none;
-}
-
 @media (max-width: 500px) {
-  body {
-    height: 100vh;
+  .buttom-div {
+    flex-direction: column;
+    gap: 15px;
   }
 
-  input {
+  .search {
     width: 80%;
   }
 
   .temp {
-    font-size: 60px;
-  }
-
-  .city {
-    font-size: 30px;
-  }
-
-  .buttom-div {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .humidity-icon, .wind-icon {
-    width: 30px;
+    font-size: 50px;
   }
 }
